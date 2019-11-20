@@ -16,7 +16,7 @@ public class Student
 	private String modulesRegistered[];
 	
 	public String getUsername() {
-		username = name + age;
+		username = getName() + getAge();
 		return username;
 	}
     public String getName() {

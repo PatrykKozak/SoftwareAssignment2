@@ -2,8 +2,8 @@ package SoftwareAssignment22.SoftwareAssignment2;
 
 public class Module {
 	private String moduleName;
-	public String listOfStudents[];
-	public String courses[];
+	private String listOfStudents[];
+	private String courses[];
 	public String getModuleName() {
 		return moduleName;
 	}
