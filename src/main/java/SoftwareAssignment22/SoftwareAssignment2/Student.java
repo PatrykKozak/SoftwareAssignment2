@@ -8,12 +8,12 @@ import java.util.Date;
  */
 public class Student 
 {
-	public String name;
-	public int age;
-	public Date dob;
-	public String username;
-	public String courses[];
-	public String modulesRegistered[];
+	private String name;
+	private int age;
+	private Date dob;
+	private String username;
+	private String courses[];
+	private String modulesRegistered[];
 	
 	public String getUsername() {
 		username = name + age;
