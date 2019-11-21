@@ -1,6 +1,7 @@
 package SoftwareAssignment22.SoftwareAssignment2;
 
-import java.util.Date;
+import java.util.ArrayList;
+import org.joda.time.LocalDate;
 
 /**
  * Hello world!
@@ -10,10 +11,10 @@ public class Student
 {
 	private String name;
 	private int age;
-	private Date dob;
+	private LocalDate dob;
 	private String username;
-	private String courses[];
-	private String modulesRegistered[];
+	private ArrayList<String> courses;
+	private ArrayList<Module> modulesRegistered = new ArrayList();
 	
 	public String getUsername() {
 		username = getName() + getAge();
@@ -31,22 +32,22 @@ public class Student
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Date getDob() {
+	public LocalDate getDob() {
 		return dob;
 	}
-	public void setDob(Date dob) {
-		this.dob = dob;
+	public void setDob(LocalDate dateOfBirth) {
+		this.dob = dateOfBirth;
 	}
-	public String[] getCourses() {
+	public ArrayList<String> getCourses() {
 		return courses;
 	}
-	public void setCourses(String[] courses) {
+	public void setCourses(ArrayList<String> courses) {
 		this.courses = courses;
 	}
-	public String[] getModulesRegistered() {
+	public ArrayList<Module> getModulesRegistered() {
 		return modulesRegistered;
 	}
-	public void setModulesRegistered(String[] modulesRegistered) {
+	public void setModulesRegistered(ArrayList<Module> modulesRegistered) {
 		this.modulesRegistered = modulesRegistered;
 	}
 	public void setUsername(String username) {

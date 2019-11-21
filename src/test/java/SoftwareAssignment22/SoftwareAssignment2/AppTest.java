@@ -1,38 +1,43 @@
 package SoftwareAssignment22.SoftwareAssignment2;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+
+import org.joda.time.LocalDate;
+import org.junit.*;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Test
+	public void test() {
+	   Student student = new Student();
+	   
+	   ArrayList<String> courses = new ArrayList();
+	   courses.add("IT");
+	   courses.add("Maths");
+	   
+	   LocalDate dateOfBirth = LocalDate.parse("1998-04-18");
+	   
+	   student.setName("Patryk");
+	   student.setAge(21);
+	   student.setCourses(courses);
+	   student.setDob(dateOfBirth);
+	  // student.setModulesRegistered(modulesRegistered);
+	   String x = student.getName();
+	   String y = "Patryk";
+	   System.out.println(dateOfBirth);
+	   assertEquals(x,y);
+   }
+	
+	@Test
+	public void test2() {
+		
+	/*	Module module = new Module();
+		module
+		module.setListOfStudents(); */
+	}
 }

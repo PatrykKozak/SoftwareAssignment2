@@ -1,5 +1,7 @@
 package SoftwareAssignment22.SoftwareAssignment2;
 
+import java.util.ArrayList;
+
 import org.joda.time.DateTime;
 
 public class CourseProgramme {
@@ -8,6 +10,14 @@ public class CourseProgramme {
 	private String listOfStundentsEnrolled[];
 	private DateTime startDate;
 	private DateTime closeDate;
+	private ArrayList<Module> modulesRegistered = new ArrayList();
+	
+	public ArrayList<Module> getModulesRegistered() {
+		return modulesRegistered;
+	}
+	public void setModulesRegistered(ArrayList<Module> modulesRegistered) {
+		this.modulesRegistered = modulesRegistered;
+	}
 	public String getClassName() {
 		return className;
 	}

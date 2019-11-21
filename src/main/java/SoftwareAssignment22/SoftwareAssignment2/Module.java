@@ -1,8 +1,10 @@
 package SoftwareAssignment22.SoftwareAssignment2;
 
+import java.util.ArrayList;
+
 public class Module {
 	private String moduleName;
-	private String listOfStudents[];
+	private ArrayList<Student> listOfStudents = new ArrayList();
 	private String courses[];
 	public String getModuleName() {
 		return moduleName;
@@ -10,10 +12,11 @@ public class Module {
 	public void setModuleName(String moduleName) {
 		this.moduleName = moduleName;
 	}
-	public String[] getListOfStudents() {
+	public ArrayList<Student> getListOfStudents() {
+		
 		return listOfStudents;
 	}
-	public void setListOfStudents(String[] listOfStudents) {
+	public void setListOfStudents(ArrayList<Student> listOfStudents) {
 		this.listOfStudents = listOfStudents;
 	}
 	public String[] getCourses() {
