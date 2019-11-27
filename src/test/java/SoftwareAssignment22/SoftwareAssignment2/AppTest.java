@@ -22,11 +22,12 @@ public class AppTest
 	   
 	   LocalDate dateOfBirth = LocalDate.parse("1998-04-18");
 	   
+	   
 	   student.setName("Patryk");
 	   student.setAge(21);
 	   student.setCourses(courses);
 	   student.setDob(dateOfBirth);
-	  // student.setModulesRegistered(modulesRegistered);
+	 //  student.setModulesRegistered(modulesRegistered);
 	   String x = student.getName();
 	   String y = "Patryk";
 	   System.out.println(dateOfBirth);
