@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Module {
 	private String moduleName;
 	private ArrayList<Student> listOfStudents = new ArrayList();
-	private String courses[];
+	private ArrayList<String> courses;
 	public String getModuleName() {
 		return moduleName;
 	}
@@ -19,10 +19,10 @@ public class Module {
 	public void setListOfStudents(ArrayList<Student> listOfStudents) {
 		this.listOfStudents = listOfStudents;
 	}
-	public String[] getCourses() {
+	public ArrayList<String> getCourses() {
 		return courses;
 	}
-	public void setCourses(String[] courses) {
+	public void setCourses(ArrayList<String> courses) {
 		this.courses = courses;
 	}
 	
